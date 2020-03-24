@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Project Manangement and Bug Tracking Tool">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMTT-About page</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest and icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+  <link rel="manifest" href="../manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="../images/android-desktop.png">
+  <meta name="application-name" content="Paisam-PPMT">
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Paisam-PPMT">
+  <link rel="apple-touch-icon-precomposed" href="../images/ios-desktop.png">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-TileImage" content="../images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+
+  <link rel="shortcut icon" href="../images/favicon.png">
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- App Styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="../styles/main.css">
+
+  <!-- TODO: Enable First Input Delay polyfill library. -->
+  <!--  <script type="text/javascript">!function(n,e){var t,o,i,c=[],f={passive:!0,capture:!0},r=new Date,a="pointerup",u="pointercancel";function p(n,c){t||(t=c,o=n,i=new Date,w(e),s())}function s(){o>=0&&o<i-r&&(c.forEach(function(n){n(o,t)}),c=[])}function l(t){if(t.cancelable){var o=(t.timeStamp>1e12?new Date:performance.now())-t.timeStamp;"pointerdown"==t.type?function(t,o){function i(){p(t,o),r()}function c(){r()}function r(){e(a,i,f),e(u,c,f)}n(a,i,f),n(u,c,f)}(o,t):p(o,t)}}function w(n){["click","mousedown","keydown","touchstart","pointerdown"].forEach(function(e){n(e,l,f)})}w(n),self.perfMetrics=self.perfMetrics||{},self.perfMetrics.onFirstInputDelay=function(n){c.push(n),s()}}(addEventListener,removeEventListener);</script> -->
+
+</head>
+<body>
+
+
+  <!-- body start-->
+  
+  <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Home</span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+          <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="search">
+            <label class="mdl-textfield__label" for="search">Enter your query...</label>
+          </div>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+          <i class="material-icons">more_vert</i>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+          <li class="mdl-menu__item"><a href="about.html">About</a></li>
+          <li class="mdl-menu__item"><a href="contact.html">Contact</a></li>
+          <li class="mdl-menu__item"><a href="legal-info.html">Legal information</a></li>
+        </ul>
+
+
+        <a class="mdl-navigation__link" href="../index.html" style="padding: 0px;">
+          <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">power_settings_new</i>
+        </a>
+
+      </div>
+    </header>
+    <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+      <header class="demo-drawer-header">
+        <img src="../images/user.jpg" class="demo-avatar">
+        <div class="demo-avatar-dropdown">
+          <span>hello@example.com</span>
+         <!-- <div class="mdl-layout-spacer"></div>
+          <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">arrow_drop_down</i>
+            <span class="visuallyhidden">Accounts</span>
+          </button>
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+            <li class="mdl-menu__item">hello@example.com</li>
+            <li class="mdl-menu__item">info@example.com</li>
+            <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
+          </ul>
+        </div>
+        -->
+      </header>
+      <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+        <a class="mdl-navigation__link" href="../profile-pg.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_box</i>Profile</a>
+        <a class="mdl-navigation__link" href="../dashboard-pg.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assessment</i>Dashboard</a>
+        <a class="mdl-navigation__link" href="../employ-vi.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Employee</a>
+        <a class="mdl-navigation__link" href="../project-vi.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">book</i>Project View</a>
+        <a class="mdl-navigation__link" href="../hierarchy-pg.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_tree</i>Hierarchy</a>
+        <a class="mdl-navigation__link" href="../store-bucket.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">cloud</i>Storage</a>
+        <a class="mdl-navigation__link" href="../chat-vi.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">chat</i>Chat View</a>
+        <a class="mdl-navigation__link" href="../workstation.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">laptop_mac</i>Workstation</a>
+        <a class="mdl-navigation__link" href="../notifi.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">notifications_active</i>Notification</a>
+        <div class="mdl-layout-spacer"></div>
+        <a class="mdl-navigation__link" href="help.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">contact_support</i>Help</a>
+      </nav>
+    </div>
+    
+    <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+       The page is under construction :( SORRY!
+    </div>
+</main>
+
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!-- body ends-->
+  
+<!-- Import and configure the Firebase SDK -->
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<script src="..//__/firebase/7.11.0/firebase-app.js"></script>
+<script src="..//__/firebase/7.11.0/firebase-auth.js"></script>
+<script src="..//__/firebase/7.11.0/firebase-storage.js"></script>
+<script src="..//__/firebase/7.11.0/firebase-messaging.js"></script>
+<script src="..//__/firebase/7.11.0/firebase-firestore.js"></script>
+<script src="..//__/firebase/7.11.0/firebase-performance.js"></script>
+<script src="..//__/firebase/init.js"></script>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>
